@@ -1,0 +1,33 @@
+<h2>New Orders</h2>
+
+<form method="POST" action="/pizzas">
+  
+  <label for="first-name-field">First Name: </label> <!-- first_name matches first_name of id in line below -->
+    <input type="text" id="first-name-field" name="first_name"/>  <!-- name matches database column -->
+
+<!-- label is asssociated with input field - means you can click on the label to access the field - helps the user -->
+
+<br>
+  
+  <label for="last-name-field">Last Name: </label>
+    <input type="text" id="last-name-field" name="last_name" />
+
+ <br>
+ 
+  <label for="pizza-select">Select Pizza: </label>
+    <select id="pizza-select" name="topping" />  <!-- drop down box  --> 
+      <option value="Margherita">Margherita</option>
+      <option value="Calzone">Calzone</option>
+    </select>
+
+  <br>
+
+  <label for="quantity">Quantity: </label>
+    <input type="number" min="1" step="1" id="quantity" name="quantity" /> 
+    <!-- still need to perform checks on data - this is not a secure way of ensuring quantities and steps are in correct -->
+
+  <br>
+  <input type="submit" value="Order Now" />
+</form>
+
+<!-- To see this being sent, going to INPSECT -> HEADERS to see the form data being sent to the root

@@ -1,0 +1,24 @@
+#navbar { 
+  background-color: red;
+  margin-top: -10px;
+  margin-left: -10px;
+  margin-right: -10px;
+  padding: 10px;
+}
+
+#nav-buttons {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin-left: 50px;
+}
+
+li a {
+  text-decoration: none;
+  color: white;
+}
+

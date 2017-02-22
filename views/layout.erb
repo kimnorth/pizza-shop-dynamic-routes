@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Pizza Shop</title>
+    <link rel="stylesheet" type="text/css" href="/style.css" />
+  </head>
+
+  <body>
+
+    <div id="navbar">
+      <nav>
+        <ul id="nav-buttons">
+          <li><a href="/pizzas">Pizza Orders</a></li>
+          <li><a href="/pizzas/new">New Order</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="main">
+      <%= yield %>
+    </div>
+  </body>
+
+</html>
+
+<!-- The reason for the '/style.css' with a slash is because href are relative to your url. If your url says localhost:4567/test/test2 and you say 'href='style.css' it will look in localhost:4567/test/test.css for your stylesheet (but your stylesheet is actually at localhost:4567/style.css which is at public/style.css). -->
